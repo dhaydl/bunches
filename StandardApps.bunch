@@ -1,0 +1,18 @@
+---
+title: Standard Apps
+menu order: 1
+startup: true
+---
+
+/*
+Bunch to launch all my standard apps during the day
+
+Bunch is executed after startup automatically (remove `startup: true` to prevent this bahavior)
+*/
+
+Fantastical
+Things
+Discord
+Messages
+WhatsApp
+    <useful.snippets#Hide Windows ~4 # after all apps are opened, hide the windows with a 4 sec delay

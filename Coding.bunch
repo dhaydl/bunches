@@ -1,0 +1,19 @@
+---
+title: Coding
+menu order: 3
+---
+
+/*
+Bunch for setting up the working environment for developing my iOS, iPadOS and macOS app LinkBin
+*/
+
+Xcode
+Timery
+Safari
+Fork
+iTerm
+Console
+@Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
+
+# stop time trackings in Timery when closing the Bunch
+<useful.snippets#StopTimeTrackings

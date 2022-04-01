@@ -1,0 +1,22 @@
+---
+title: TechnikNews/Apfelpage
+menu order: 2
+---
+
+/*
+Bunch for setting up the working environment for writing articles for TechnikNews.net or Apfelpage.de
+*/
+
+Safari
+Slack
+Ulysses
+LinkBin
+Timery
+
+# stop time trackings in Timery when closing the Bunch
+<useful.snippets#StopTimeTrackings
+
+# run a shortcut to get a list with all appropriate Timery trackings when opening the Bunch
+time_tracking = ?[TechnikNews, Apfelpage] "Time-Tracking auswählen"
+$/usr/bin/shortcuts run "${time_tracking} Time-Trackings"
+
