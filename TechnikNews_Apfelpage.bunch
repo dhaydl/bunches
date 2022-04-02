@@ -1,6 +1,7 @@
 ---
 title: TechnikNews/Apfelpage
 menu order: 2
+sequence: parallel
 ---
 
 /*
@@ -13,6 +14,8 @@ Ulysses
 LinkBin
 Timery
 
+@Ulysses
+
 # stop time trackings in Timery when closing the Bunch
 <useful.snippets#StopTimeTrackings
 
@@ -20,3 +23,6 @@ Timery
 time_tracking = ?[TechnikNews, Apfelpage] "Time-Tracking auswählen"
 $/usr/bin/shortcuts run "${time_tracking} Time-Trackings"
 
+    # arrange windows for blogging context
+    <useful.snippets#ArrangeWindows
+    - snapshot_name = TechnikNews/Apfelpage
