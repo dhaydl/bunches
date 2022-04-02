@@ -1,19 +1,40 @@
 ---
 title: Coding
 menu order: 3
+sequence: parallel
 ---
 
 /*
 Bunch for setting up the working environment for developing my iOS, iPadOS and macOS app LinkBin
 */
 
-Xcode
 Timery
 Safari
 Fork
 iTerm
 Console
-@Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
 
 # stop time trackings in Timery when closing the Bunch
 <useful.snippets#StopTimeTrackings
+
+?{
+    LinkBin => <<#LinkBin
+    WatchWatchList => <<#WatchWatchList
+}"Projekt auswählen"
+
+    # arrange windows for coding context
+    <useful.snippets#ArrangeWindows
+    - snapshot_name = Coding
+___
+
+#[LinkBin]
+Xcode
+- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/ReallyDumbLinkList
+@Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
+
+$/usr/bin/shortcuts run "LinkBin Time-Trackings"
+
+#[WatchWatchList]
+Xcode
+- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/WatchWatchList
+@Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
