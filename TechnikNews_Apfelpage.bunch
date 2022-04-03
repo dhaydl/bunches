@@ -1,7 +1,7 @@
 ---
 title: TechnikNews/Apfelpage
 menu order: 2
-sequence: parallel
+sequence: sequential
 ---
 
 /*

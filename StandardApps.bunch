@@ -2,6 +2,7 @@
 title: Standard Apps
 menu order: 1
 startup: true
+sequence: parallel
 ---
 
 /*
