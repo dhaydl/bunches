@@ -1,7 +1,7 @@
 ---
 title: TechnikNews/Apfelpage
 menu order: 2
-sequence: sequential
+sequence: parallel
 ---
 
 /*
@@ -24,5 +24,5 @@ time_tracking = ?[TechnikNews, Apfelpage] "Time-Tracking auswählen"
 $/usr/bin/shortcuts run "${time_tracking} Time-Trackings"
 
     # arrange windows for blogging context
-    <useful.snippets#ArrangeWindows
+    <useful.snippets#ArrangeWindows ~4
     - snapshot_name = TechnikNews/Apfelpage

@@ -1,7 +1,7 @@
 ---
 title: Coding
 menu order: 3
-sequence: sequential
+sequence: parallel
 ---
 
 /*
@@ -13,18 +13,19 @@ Safari
 Fork
 
 $ open -a Simulator.app
-!$ killall Simulator # close simulator when closing the bunch
-
-# stop time trackings in Timery when closing the Bunch
-<useful.snippets#StopTimeTrackings
 
 ?{
     LinkBin => <<#LinkBin
     WatchWatchList => <<#WatchWatchList
 }"Projekt auswählen"
 
+!$ killall Simulator # close simulator when closing the bunch
+
+# stop time trackings in Timery when closing the Bunch
+<useful.snippets#StopTimeTrackings
+
     # arrange windows for coding context
-    <useful.snippets#ArrangeWindows
+    <useful.snippets#ArrangeWindows ~4
     - snapshot_name = Coding
 ___
 
