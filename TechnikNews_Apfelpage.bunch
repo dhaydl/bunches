@@ -16,9 +16,6 @@ Timery
 
 @Ulysses
 
-# stop time trackings in Timery when closing the Bunch
-<useful.snippets#StopTimeTrackings
-
 # run a shortcut to get a list with all appropriate Timery trackings when opening the Bunch
 time_tracking = ?[TechnikNews, Apfelpage] "Time-Tracking auswählen"
 $/usr/bin/shortcuts run "${time_tracking} Time-Trackings"
@@ -26,3 +23,9 @@ $/usr/bin/shortcuts run "${time_tracking} Time-Trackings"
     # arrange windows for blogging context
     <useful.snippets#ArrangeWindows ~4
     - snapshot_name = TechnikNews/Apfelpage
+
+# stop time trackings in Timery when closing the Bunch
+<useful.snippets#StopTimeTrackings
+
+# clean-up Desktop with all Markdown files
+!&MarkdownCleanup.workflow
