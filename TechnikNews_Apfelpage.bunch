@@ -28,4 +28,4 @@ $/usr/bin/shortcuts run "${time_tracking} Time-Trackings"
 <useful.snippets#StopTimeTrackings
 
 # clean-up Desktop with all Markdown files
-!&MarkdownCleanup.workflow
+!$/usr/bin/shortcuts run "Markdown Clean-Up"
