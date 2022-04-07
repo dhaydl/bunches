@@ -25,7 +25,7 @@ $ open -a Simulator.app
 <useful.snippets#StopTimeTrackings
 
     # arrange windows for coding context
-    <useful.snippets#ArrangeWindows ~4
+    <useful.snippets#ArrangeWindows ~6
     - snapshot_name = Coding
 ___
 
