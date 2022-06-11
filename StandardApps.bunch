@@ -13,7 +13,7 @@ Bunch is executed after startup automatically (remove `startup: true` to prevent
 
 Fantastical
 Things
-Discord
+com.hnc.Discord
 Messages
 WhatsApp
     <useful.snippets#Hide Windows ~6 # after all apps are opened, hide the windows with a 6 sec delay
