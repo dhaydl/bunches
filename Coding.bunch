@@ -5,38 +5,55 @@ sequence: parallel
 ---
 
 /*
-Bunch for setting up the working environment for developing my iOS, iPadOS and macOS app LinkBin
+Bunch for setting up the working environment for developing my iOS, iPadOS and macOS apps, LinkBin and CocktailBar
 */
 
 Timery
 Safari
-GitKraken
 
 $ open -a Simulator.app
 
 ?{
     LinkBin => <<#LinkBin
-    WatchWatchList => <<#WatchWatchList
+    CocktailBar => <<#CocktailBar
 }"Projekt auswählen"
 
 !$ killall Simulator # close simulator when closing the bunch
 
 # stop time trackings in Timery when closing the Bunch
 <useful.snippets#StopTimeTrackings
-
-    # arrange windows for coding context
-    <useful.snippets#ArrangeWindows ~6
-    - snapshot_name = Coding
 ___
 
 #[LinkBin]
+GitKraken
+- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/ReallyDumbLinkList
+
 Xcode
 - /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/ReallyDumbLinkList
 @Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
 
 $/usr/bin/shortcuts run "LinkBin Time-Trackings"
 
-#[WatchWatchList]
+#[CocktailBar]
+GitKraken
+- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/CocktailBar
+
+$/usr/bin/shortcuts run "CocktailBar Time-Trackings"
+
+-[] Backend => <<#CocktailBarBackend
+-[] Frontend => <<#CocktailBarFrontend
+
+#[CocktailBarFrontend]
 Xcode
-- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/WatchWatchList
+- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/CocktailBar/CocktailBar.xcodeproj
 @Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
+
+#[CocktailBarBackend]
+Xcode
+- /Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/CocktailBar/CocktailBarServer
+@Xcode ~2 # focus Xcode with a 2 sec delay, hide other windows
+
+iTerm
+- {"docker start postgres-7pNJ"}
+- {"'/Users/davidhaydl/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projekte/CocktailBar' return"}
+
